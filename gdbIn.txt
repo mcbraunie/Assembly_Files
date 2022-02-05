@@ -1,0 +1,23 @@
+# --------------------
+# Debugging Script
+# --------------------
+echo \n\n
+break last
+run
+set logging off
+set pagination off
+set logging file out.txt
+set logging overwrite
+set logging on
+set prompt
+echo *******************\n
+echo ________DEBUGGING_______ \n
+echo *************************\n
+echo Display Variables \n
+echo \n\n
+; echo db &list1 \n
+echo x/db &bVar1
+echo x/db &bVar2
+echo x/db &bResult
+echo \n\n
+echo set logging off
